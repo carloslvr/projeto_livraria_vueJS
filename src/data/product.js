@@ -1,71 +1,71 @@
-// Este arquivo é um módulo JavaScript que exporta uma lista de produtos, representando livros disponíveis para compra. Cada produto é um objeto com propriedades como id, título, autor, resenha, preço e capa (URL da imagem). Esta lista pode ser importada e utilizada em outros componentes do aplicativo para exibir os produtos aos usuários, permitindo que eles naveguem pelos livros disponíveis e adicionem itens ao carrinho de compras. Não se limitem a esses livros sugeridos. Fiquem a vontade para aumentar esta base de dados de livros para serem apresentados pro usuário. Com uma variedade maior, vocẽs podeao filtrar por autor, por preço, por gênero, etc. E também podem adicionar mais informações sobre os livros, como número de páginas, editora, data de publicação, etc. Quanto mais informações vocês tiverem sobre os livros, melhor será a experiência do usuário ao navegar pelos produtos e tomar decisões de compra.
+// Este arquivo é um módulo JavaScript que exporta uma lista de produtos, representando livros disponíveis para compra. Cada produto é um objeto com propriedades como id, título, raridade, descricao, preço e capa (URL da imagem). Esta lista pode ser importada e utilizada em outros componentes do aplicativo para exibir os produtos aos usuários, permitindo que eles naveguem pelos livros disponíveis e adicionem itens ao carrinho de compras. Não se limitem a esses livros sugeridos. Fiquem a vontade para aumentar esta base de dados de livros para serem apresentados pro usuário. Com uma variedade maior, vocẽs podeao filtrar por raridade, por preço, por gênero, etc. E também podem adicionar mais informações sobre os livros, como número de páginas, editora, data de publicação, etc. Quanto mais informações vocês tiverem sobre os livros, melhor será a experiência do usuário ao navegar pelos produtos e tomar decisões de compra.
 export const produtos = [
   {
     id: 1,
-    titulo: 'Clean Code',
-    autor: 'Robert C. Martin',
-    resenha:
-      'Um livro sobre boas práticas de programação, escrita de código limpo e melhoria da qualidade de software.',
+    titulo: 'Planeta de Compras (Shopping Planet)',
+    raridade: 'SS-2',
+    descricao:
+      'Dá acesso a um shopping center exclusivo onde você pode comprar qualquer item que já foi vendido no mundo real, mesmo coisas raras, descontinuadas ou esgotadas.',
     preco: 129.9,
     capa: 'https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg',
   },
   {
     id: 2,
-    titulo: 'The Pragmatic Programmer',
-    autor: 'Andrew Hunt e David Thomas',
-    resenha:
-      'Uma obra clássica sobre postura profissional, organização e boas práticas no desenvolvimento de software.',
+    titulo: 'Pílulas da Respiração (Breath Pills)',
+    raridade: 'A-17',
+    descricao:
+      'Uma obra clássica sobre postura profissional, organização e boas práticas no desenvolvimento de softwareUm frasco com 100 pílulas. Tomar uma cura instantaneamente qualquer doença ou ferimento físico.',
     preco: 149.9,
     capa: 'https://covers.openlibrary.org/b/isbn/9780201616224-L.jpg',
   },
   {
     id: 3,
-    titulo: 'Eloquent JavaScript',
-    autor: 'Marijn Haverbeke',
-    resenha:
-      'Uma introdução prática à linguagem JavaScript, com exemplos e conceitos fundamentais para desenvolvimento web.',
+    titulo: 'Skinship (Conexão de Pele)',
+    raridade: 'A-20',
+    descricao:
+      'Uma loção que, quando aplicada, faz com que qualquer pessoa que toque em você sinta um carinho profundo e imediato, como se fossem melhores amigos ou família.',
     preco: 89.9,
     capa: 'https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg',
   },
   {
     id: 4,
-    titulo: "You Don't Know JS Yet",
-    autor: 'Kyle Simpson',
-    resenha: 'Livro voltado ao aprofundamento dos principais conceitos da linguagem JavaScript.',
+    titulo: "Almofada de Emagrecimento (Slimming Cushion)",
+    raridade: 'B-30',
+    descricao: 'Sentar nesta almofada por apenas uma hora por dia faz você perder peso de forma saudável e moldar o corpo ideal.',
     preco: 79.9,
     capa: 'https://covers.openlibrary.org/b/isbn/9781091210092-L.jpg',
   },
   {
     id: 5,
-    titulo: 'Design Patterns',
-    autor: 'Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides',
-    resenha:
-      'Livro clássico sobre padrões de projeto e soluções reutilizáveis para problemas comuns de software.',
+    titulo: 'Memória Fotográfica (Photographic Memory)',
+    raridade: 'B-56',
+    descricao:
+      'Uma câmera que não tira fotos de imagens, mas sim da sua memória atual, permitindo que você a visualize perfeitamente ou recupere lembranças esquecidas.',
     preco: 159.9,
     capa: 'https://covers.openlibrary.org/b/isbn/9780201633610-L.jpg',
   },
   {
     id: 6,
-    titulo: 'Introduction to Algorithms',
-    autor: 'Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest e Clifford Stein',
-    resenha: 'Referência ampla sobre algoritmos, estruturas de dados e análise de complexidade.',
+    titulo: 'Mansão de Aluguel de Luxo (Luxury Rental Mansion)',
+    raridade: 'S-6',
+    descricao: 'Uma maquete que se transforma em uma mansão de luxo de 20 quartos, com direito a mordomo, chef de cozinha e spa inclusos, contanto que você pague o "aluguel" (que no jogo é simbólico).',
     preco: 199.9,
     capa: 'https://covers.openlibrary.org/b/isbn/9780262033848-L.jpg',
   },
   {
     id: 7,
-    titulo: 'Refactoring',
-    autor: 'Martin Fowler',
-    resenha:
-      'Apresenta técnicas para melhorar a estrutura interna do código sem alterar seu comportamento externo.',
+    titulo: 'Concha do Despertar (Awakening Shell)',
+    raridade: 'A-15',
+    descricao:
+      'Dormir dentro desta concha gigante garante que você acorde se sentindo 100% revigorado, não importa o quão cansado estava ou quão poucas horas tenha dormido.',
     preco: 139.9,
     capa: 'https://covers.openlibrary.org/b/isbn/9780134757599-L.jpg',
   },
   {
     id: 8,
-    titulo: 'HTML and CSS',
-    autor: 'Jon Duckett',
-    resenha: 'Livro introdutório e visual sobre construção de páginas web com HTML e CSS.',
+    titulo: 'Bilhete de Viagem de Ida e Volta (Round-Trip Travel Ticket)',
+    raridade: 'B-66',
+    descricao: 'Um bilhete que permite que você vá para qualquer lugar do mundo instantaneamente e retorne ao ponto de partida assim que o tempo estipulado acabar.',
     preco: 99.9,
     capa: 'https://covers.openlibrary.org/b/isbn/9781118008188-L.jpg',
   },

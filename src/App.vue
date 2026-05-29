@@ -12,5 +12,5 @@ import AppHeader from '@/components/layout/AppHeader.vue'
 </template>
 
 <style scoped>
-pinto
+
 </style>
