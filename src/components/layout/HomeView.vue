@@ -3,7 +3,28 @@
 </script>
 
 <template>
-  Hello World!
+    <header>
+        <section>
+            <h1>Boas-vindas!</h1>
+        </section>
+        <p>
+            Ache as mais diversas cartas de coleção no nosso site
+        </p>
+    </header>
+    <section>
+      <h2>Destaques</h2>
+      <p>
+        Encontre as nossas cartas mais procuradas
+      </p>
+      <ul>
+        <li>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+          <a href=""></a>
+        </li>
+      </ul>
+    </section>
 </template>
 
 <style scoped>
