@@ -7,7 +7,7 @@ export const produtos = [
     descricao:
       'Dá acesso a um shopping center exclusivo onde você pode comprar qualquer item que já foi vendido no mundo real, mesmo coisas raras, descontinuadas ou esgotadas.',
     preco: 129.9,
-    capa: 'https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg',
+    capa: '.scr/components/planeta_de_compras.png',
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const produtos = [
     descricao:
       'Uma obra clássica sobre postura profissional, organização e boas práticas no desenvolvimento de softwareUm frasco com 100 pílulas. Tomar uma cura instantaneamente qualquer doença ou ferimento físico.',
     preco: 149.9,
-    capa: 'https://covers.openlibrary.org/b/isbn/9780201616224-L.jpg',
+    capa: '',
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ export const produtos = [
     descricao:
       'Uma loção que, quando aplicada, faz com que qualquer pessoa que toque em você sinta um carinho profundo e imediato, como se fossem melhores amigos ou família.',
     preco: 89.9,
-    capa: 'https://covers.openlibrary.org/b/isbn/9781593279509-L.jpg',
+    capa: '',
   },
   {
     id: 4,
@@ -41,8 +41,8 @@ export const produtos = [
     raridade: 'B-56',
     descricao:
       'Uma câmera que não tira fotos de imagens, mas sim da sua memória atual, permitindo que você a visualize perfeitamente ou recupere lembranças esquecidas.',
-    preco: 159.9,
-    capa: 'https://covers.openlibrary.org/b/isbn/9780201633610-L.jpg',
+    preco: 20.90,
+    capa: '',
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ export const produtos = [
     raridade: 'S-6',
     descricao: 'Uma maquete que se transforma em uma mansão de luxo de 20 quartos, com direito a mordomo, chef de cozinha e spa inclusos, contanto que você pague o "aluguel" (que no jogo é simbólico).',
     preco: 199.9,
-    capa: 'https://covers.openlibrary.org/b/isbn/9780262033848-L.jpg',
+    capa: '',
   },
   {
     id: 7,
@@ -58,15 +58,15 @@ export const produtos = [
     raridade: 'A-15',
     descricao:
       'Dormir dentro desta concha gigante garante que você acorde se sentindo 100% revigorado, não importa o quão cansado estava ou quão poucas horas tenha dormido.',
-    preco: 139.9,
-    capa: 'https://covers.openlibrary.org/b/isbn/9780134757599-L.jpg',
+    preco: 55.99,
+    capa: '',
   },
   {
     id: 8,
     titulo: 'Bilhete de Viagem de Ida e Volta (Round-Trip Travel Ticket)',
     raridade: 'B-66',
     descricao: 'Um bilhete que permite que você vá para qualquer lugar do mundo instantaneamente e retorne ao ponto de partida assim que o tempo estipulado acabar.',
-    preco: 99.9,
-    capa: 'https://covers.openlibrary.org/b/isbn/9781118008188-L.jpg',
+    preco: 27.98,
+    capa: './scr/components/products/bilhete_viagem.png',
   },
 ]
