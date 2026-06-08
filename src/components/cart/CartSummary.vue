@@ -6,7 +6,7 @@ defineProps({
 })
 
 function finalizarCompra() {
-  alert('Compra finalizada!')
+  alert('Compra finalizada')
 }
 </script>
 

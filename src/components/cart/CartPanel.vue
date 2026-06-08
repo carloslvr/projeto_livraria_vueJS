@@ -5,6 +5,8 @@ import { ref, computed } from 'vue'
 import ItemCarrinho from './CartItem.vue'
 import ResumoCarrinho from './CartSummary.vue'
 
+const tipoOrdenacao = ref('nome')
+
 const produtos = ref([
   {
     id: 1,
@@ -16,6 +18,12 @@ const produtos = ref([
     id: 2,
     nome: 'Tênis',
     preco: 199.90,
+    quantidade: 1
+  },
+  {
+    id: 3,
+    nome: 'Boné',
+    preco: 39.90,
     quantidade: 1
   }
 ])
@@ -36,6 +44,30 @@ function removerProduto(id) {
   )
 }
 
+const produtosOrdenados = computed(() => {
+  const lista = [...produtos.value]
+
+  switch (tipoOrdenacao.value) {
+    case 'nome':
+      return lista.sort((a, b) =>
+        a.nome.localeCompare(b.nome)
+      )
+
+    case 'precoMenor':
+      return lista.sort((a, b) =>
+        a.preco - b.preco
+      )
+
+    case 'precoMaior':
+      return lista.sort((a, b) =>
+        b.preco - a.preco
+      )
+
+    default:
+      return lista
+  }
+})
+
 const valorTotal = computed(() => {
   return produtos.value.reduce(
     (total, produto) =>
@@ -50,10 +82,19 @@ const valorTotal = computed(() => {
   <div class="carrinho">
     <h1>Meu Carrinho</h1>
 
-    <div v-if="produtos.length > 0">
+    <div class="filtro">
+      <label>Ordenar por:</label>
 
+      <select v-model="tipoOrdenacao">
+        <option value="nome">Nome (A-Z)</option>
+        <option value="precoMenor">Menor preço</option>
+        <option value="precoMaior">Maior preço</option>
+      </select>
+    </div>
+
+    <div v-if="produtosOrdenados.length > 0">
       <ItemCarrinho
-        v-for="produto in produtos"
+        v-for="produto in produtosOrdenados"
         :key="produto.id"
         :produto="produto"
         @alterarQuantidade="alterarQuantidade"
@@ -61,7 +102,6 @@ const valorTotal = computed(() => {
       />
 
       <ResumoCarrinho :total="valorTotal" />
-
     </div>
 
     <div v-else>
@@ -76,5 +116,14 @@ const valorTotal = computed(() => {
   max-width: 800px;
   margin: auto;
   padding: 20px;
+}
+
+.filtro {
+  margin-bottom: 20px;
+}
+
+select {
+  margin-left: 10px;
+  padding: 5px;
 }
 </style>
