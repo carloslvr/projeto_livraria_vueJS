@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  Hello World!
+  Hello World
 </template>
 
 <style scoped>
