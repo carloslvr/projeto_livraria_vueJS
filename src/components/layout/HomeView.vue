@@ -48,6 +48,7 @@ const destaques = produtos.slice(0, 4)
       </div>
     </section>
   </main>
+  
 </template>
 
 <style scoped>
